@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorial</title>
+    <link rel="icon" href="images/heart-icon.svg">
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!--/ /-------- Font Awesome --------/ /-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--/ /-------- Stylesheet --------/ /-->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Link to Parse Library -->
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--/ /-------- JavaScript --------/ /-->
+    <script src="memorialScript.js" defer></script>
+</head>
+
+<body id="memorial">
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="logo"><a href="index.html"><img src="images/home.svg" alt="logo"></a></div>
+                <input type="checkbox" id="check">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Community</a></li>
+                        <li><a href="memorial.html">Memorial</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+                </div>
+                <button id="newMemorialBtn">
+                    <svg id="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.55 16.25" height="20">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #E22626;
+                                }
+                            </style>
+                        </defs>
+                        <path class="cls-1" d="m13.56,15.59c-.04.13-.18.2-.31.14-3.67-1.59-7.19-3.59-10.18-6.24-1.08-.96-2.14-2.08-2.48-3.48-.3-1.25-.31-2.54.35-3.65C1.56,1.32,2.26.61,4.09.31c.89-.15,2.4.46,3.11,1.02,1.19.92,1.45,2.13,1.98,3.53.02.06.1.04.09-.02-.09-1.05.26-2.14.98-2.9.85-.9,2.2-1.31,3.39-.99,1.15.32,2.06,1.28,2.51,2.39s.47,2.35.26,3.53c-.2,1.18-.62,2.31-1.04,3.43-.66,1.79-1.33,3.58-1.82,5.28Z" />
+                    </svg>
+                    create a post
+                </button>
+                <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="memorial-hero-wrapper">
+            <div id="ultramarine-bg" data-aos="fade-right">
+                <div id="sunflower-grid">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                </div>
+                <img src="images/david-rasterized-svg.png" alt="hero image" id="memorial-hero-img">
+            </div>
+            <div id="memorial-text" data-aos="fade-up">
+                <h1>David Breaux – the 'Compassion Guy'</h1>
+                <h3>1973-2023</h3>
+                <p>David Breaux was a longstanding leader in the Davis community. He promoted radical compassion: that all people were deserving of compassion, love, understanding, and forgiveness. David, a self described "<a href="https://medium.com/@dhbreaux/being-a-street-therapist-b849a82ef206" class="link">Street Therapist</a>," who generously extended a compassionate ear to countless people within Davis.</p>
+                <p>David published a book titled "Compassion: Davis CA," shared hundreds of posts accross his social media pages. He was a son, brother, friend, author, community member and leader. His life was taken far too soon, and the absence of his physical presence is felt deeply within the Davis community. David's work lives on through the Compassion Bench, his online content, and through the intention of this website.</p>
+                <p>*All images of David included on this website were sourced from David's original online posts.</p>
+                <p>To learn more about David's work through the links below:</p>
+                <ol>
+                    <li><a href="https://www.instagram.com/dhbreaux/?hl=en" class="link">David's Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCq5JS-GQyL6GVfQ6i1RAdVg" class="link">David's YouTube Page</a></li>
+                    <li><a href="https://medium.com/@dhbreaux" class="link">David's Medium Blog</a></li>
+                </ol>
+                <div class="scroll-wrapper">
+                    <div>scroll</div>
+                    <i class="fa fa-arrow-down fa-2x"></i>
+                </div>
+            </div>
+        </div>
+        <h2>Posts for David</h2>
+        <ol class="memorial-post-list"></ol>
+
+        <div id="overlay" class="hidden"></div>
+    </main>
+    
+    <div id="overlay" class="hidden"></div>
+    <form id="create-memorial-post" class="create-post-offscreen">
+        <i class="fas fa-times close-form"></i>
+        <h3>Remembering David</h3>
+        <div id="create-post-input-wrapper">
+            <p class="create-post-input-field">
+                <label for="keyword">Keywords *</label>
+                <input type="text" id="keyword" name="keyword">
+            </p>
+            <p class="create-post-input-field">
+                <label for="response">Response *</label>
+                <input type="text" id="response" name="response">
+            </p>
+            <p class="create-post-input-field">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name">
+            </p>
+            <label for="selImg">Select an image *</label>
+            <div id="selImg">
+                <input class="input-hidden" type="radio" value="sunflower" name="selectedImage" id="sunflower">
+                <label for="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                </label>
+
+                <input class="input-hidden" type="radio" value="tree" name="selectedImage" id="tree">
+                <label for="tree">
+                    <img src="images/tree.png" alt="tree">
+                </label>
+
+                <input class="input-hidden" type="radio" value="hand" name="selectedImage" id="hand">
+                <label for="hand">
+                    <img src="images/hand.png" alt="hand">
+                </label>
+
+                <input class="input-hidden" type="radio" value="peace" name="selectedImage" id="peace">
+                <label for="peace">
+                    <img src="images/peace.png" alt="peace">
+                </label>
+
+                <input class="input-hidden" type="radio" value="poppies" name="selectedImage" id="poppies">
+                <label for="poppies">
+                    <img src="images/poppies.png" alt="poppies">
+                </label>
+
+                <input class="input-hidden" type="radio" value="star" name="selectedImage" id="star">
+                <label for="star">
+                    <img src="images/star.png" alt="star">
+                </label>
+            </div>
+            <p id="alert">* indicates a required field</p>
+        </div>
+        <input type="submit" value="Upload Post" class="btn">
+    </form>
+    <footer>
+        <h4>&copy; Designed and developed by Kestrel Hewson 2023</h4>
+    </footer>
+</body>
+
+</html>

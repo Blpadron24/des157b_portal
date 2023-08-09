@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="icon" href="images/heart-icon.svg">
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!--/ /-------- Font Awesome --------/ /-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--/ /-------- Stylesheet --------/ /-->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Link to Parse Library -->
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--/ /-------- JavaScript --------/ /-->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="logo"><a href="index.html"><img src="images/home.svg" alt="logo" class="hidden" id="community-logo"></a></div>
+                <input type="checkbox" id="check">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Community</a></li>
+                        <li><a href="memorial.html">Memorial</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+                </div>
+                <button id="newbtn">
+                    <svg id="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.55 16.25" height="20">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #E22626;
+                                }
+                            </style>
+                        </defs>
+                        <path class="cls-1" d="m13.56,15.59c-.04.13-.18.2-.31.14-3.67-1.59-7.19-3.59-10.18-6.24-1.08-.96-2.14-2.08-2.48-3.48-.3-1.25-.31-2.54.35-3.65C1.56,1.32,2.26.61,4.09.31c.89-.15,2.4.46,3.11,1.02,1.19.92,1.45,2.13,1.98,3.53.02.06.1.04.09-.02-.09-1.05.26-2.14.98-2.9.85-.9,2.2-1.31,3.39-.99,1.15.32,2.06,1.28,2.51,2.39s.47,2.35.26,3.53c-.2,1.18-.62,2.31-1.04,3.43-.66,1.79-1.33,3.58-1.82,5.28Z" />
+                    </svg>
+                    create a post
+                </button>
+                <label for="check" class="open-menu">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-wrapper">
+            <div class="hero-img" data-aos="fade-right">
+                <img src="images/welcome.svg" alt="Welcome to the compassion bench" id="hero-img">
+            </div>
+            <div id="assets-and-text">
+                <div class="left">
+                    <img src="images/poppies.png" alt="poppies" id="poppies-asset" data-aos="fade-right">
+                    <img src="images/hand.png" alt="hand" id="hand-asset" data-aos="fade-up">
+                    <img src="images/peace.png" alt="peace" id="peace-asset" data-aos="fade-up">
+                </div>
+                <div class="hero-text">
+                    <p>Please take a few moments to reflect the concept of compassion and how compassion takes shape in your life. What does compassion mean to you?
+                    </p>
+                    <p>When you have finished, please share your thoughts by <em>creating a post</em>.</p>
+                </div>
+                <div class="right">
+                    <img src="images/sunflower.png" alt="sunflower" id="sunflower-asset" data-aos="fade-right">
+                    <img src="images/star.png" alt="star" id="star-asset" data-aos="fade-left">
+                    <img src="images/tree.png" alt="tree" id="tree-asset" data-aos="fade-left">
+                </div>
+            </div>
+
+            <div class="scroll-wrapper">
+                <div>scroll</div>
+                <i class="fa fa-arrow-down fa-2x"></i>
+            </div>
+
+        </div>
+        <h2>Community Posts</h2>
+        <ol class="community-post-list"></ol>
+    </main>
+
+    <footer>
+        <h4>&copy; Designed and developed by Kestrel Hewson 2023</h4>
+    </footer>
+    <div id="overlay" class="hidden"></div>
+    <form id="create-post" class="create-post-offscreen">
+        <i class="fas fa-times close-form"></i>
+        <h3>What does compassion mean to you?</h3>
+        <div id="create-post-input-wrapper">
+            <p class="create-post-input-field">
+                <label for="title">Keywords *</label>
+                <input type="text" id="title" name="title">
+            </p>
+            <p class="create-post-input-field">
+                <label for="response">Response *</label>
+                <input type="text" id="response" name="response">
+            </p>
+            <p class="create-post-input-field">
+                <label for="signature">Name *</label>
+                <input type="text" id="signature" name="signature">
+            </p>
+            <label for="selImg">Select an image *</label>
+            <div id="selImg">
+                <input class="input-hidden" type="radio" value="sunflower" name="selectedImage" id="sunflower">
+                <label for="sunflower">
+                    <img src="images/sunflower.png" alt="sunflower">
+                </label>
+
+                <input class="input-hidden" type="radio" value="tree" name="selectedImage" id="tree">
+                <label for="tree">
+                    <img src="images/tree.png" alt="tree">
+                </label>
+
+                <input class="input-hidden" type="radio" value="hand" name="selectedImage" id="hand">
+                <label for="hand">
+                    <img src="images/hand.png" alt="hand">
+                </label>
+
+                <input class="input-hidden" type="radio" value="peace" name="selectedImage" id="peace">
+                <label for="peace">
+                    <img src="images/peace.png" alt="peace">
+                </label>
+
+                <input class="input-hidden" type="radio" value="poppies" name="selectedImage" id="poppies">
+                <label for="poppies">
+                    <img src="images/poppies.png" alt="poppies">
+                </label>
+
+                <input class="input-hidden" type="radio" value="star" name="selectedImage" id="star">
+                <label for="star">
+                    <img src="images/star.png" alt="star">
+                </label>
+            </div>
+            <p id="alert">* indicates a required field</p>
+        </div>
+        <input type="submit" value="Upload Post" class="btn">
+    </form>
+</body>
+
+</html>

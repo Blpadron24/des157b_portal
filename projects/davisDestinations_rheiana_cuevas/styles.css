@@ -1,0 +1,299 @@
+/* Design System */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFBF1;
+    color: #171717;
+    position: relative;
+}
+
+#mobileAlert{
+    display: none;
+
+}
+
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+p, li{
+    font-family: 'Nunito', sans-serif;
+}
+
+#homepage p{
+    text-align: center;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top:5%;
+}
+
+button {
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    margin-top:8px;
+    margin-bottom:8px;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 21px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#171717;
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #17C170;
+}
+
+.secondary {
+    background-color:  #FFFBF1;
+    border: 3px solid #17C170;
+}
+
+/* Show and hidden */
+.showing {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Homepage */
+#homepage {
+    /* want background to be image */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+#buttons {
+    margin-top: 30px;
+}
+
+/* Map */
+
+#mappage{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:-1;
+    opacity:0;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+.fas.fa-long-arrow-left {
+    background-color: red;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+}
+
+
+.leaflet-popup-content{
+    width:180px;
+    text-align:center;
+    margin: 20px 20px 20px 15px;
+}
+
+#back {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#backHome{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 50px;
+    font-size: 18px;
+
+    background-color: #32C57E;
+    color: #FFFBF1;
+}
+
+#instruct {
+    background-color: #32C57E;
+    color: #FFFBF1;
+    font-size: 18px;
+
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.fas.fa-home{
+    font-size: 18px;
+}
+
+/* info section */
+
+#placeinfo{
+    
+    overflow: hidden;
+}
+
+#placeinfo h2, #placeinfo p, #placeinfo .sealImg{
+    padding-top:10px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+ 
+
+#placeinfo li{
+    padding-top:10px;
+    margin-left:15%;
+    margin-right:10%;
+}
+
+#placeinfo li a {
+    color:#171717;
+}
+#placeinfo .camera{
+    margin-top:20px;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+/* Face filter */
+#facefilter {
+    position: fixed; 
+    top:0; 
+    left:0; 
+    width: 100%; 
+    height: 100%;
+    z-index: 1;
+}
+
+/* Back to map button */
+#backMap {
+    z-index: 2;
+    position: relative;
+    top: 5%;
+}
+
+#user-test {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#capture {
+    position: fixed;
+	bottom: 2vh;
+	left: 50%;
+	height: 12vw;
+	width: 12vw;
+	border: solid 3px #17C170;
+	border-radius: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+
+#switch {
+	position: fixed;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+
+#popup {
+    background-color: #17C170;
+    font-weight: bold;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20px;
+    /* margin: auto; */
+
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    transform: translate(-10%, 70%);
+}
+
+#popup li {
+    margin-bottom: 5px;
+}
+
+#close {
+    font-size: 20px;    
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+@media (min-width: 600px){
+#mobileAlert {
+display: block;
+width: 100vw;
+height: 100vh;
+background-color: #17C170;
+
+}
+#mobileAlert div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    background-color: #dce7de;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+#mobileAlert div h2{
+font-size: 39px;
+line-height: 1.1em;
+padding-bottom: 20px;
+
+}
+#mobileAlert div p:first-of-type{
+    padding-bottom: 20px;
+
+}
+
+#mobileAlert div p:last-of-type{
+    padding-top: 20px;
+
+}
+button{
+    visibility: hidden;
+}
+
+}

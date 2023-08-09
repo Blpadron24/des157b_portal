@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <!-- leaflet stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+     <!-- Font Awesome -->
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/> -->
+
+
+    <!-- stylesheet  -->
+    <link href="styles.css" rel="stylesheet"/>
+
+    <!-- Leaflet JS Code -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+
+    <!-- Facemesh JS Code -->
+    <script src="libs/mindar/mindar-face-three.prod.js"></script>
+    <script data-consolejs-channel="716cb977-ed41-c4f4-58a7-1929b3f5ed06" src="https://remotejs.com/agent/agent.js"></script>
+
+     <!-- JS Code -->
+    <script src="script.js" type="module"></script>
+
+
+    <title>Final Project</title>
+</head>
+<body>
+
+    <div id="mobileAlert">
+        <div>
+            <h2> Please view this project on a mobile device</h2>
+            <p>This project has been sized and optimized for mobile viewing. Scanning this QR code with your phone's camera will bring you to mobile site.</p>
+            <img src="#" alt="qrcode">
+            <p>Alternatively, resizing your desktop browser window to below 600px in width will allow you to simulate a mobile experience.</p>
+        </div>
+    </div>
+    
+    <button id="backHome">
+        <i class="fas fa-home"></i>
+    </button>
+
+    <button id="instruct">
+        <i class="fas fa-info-circle"></i>    
+    </button>
+
+    <section id="homepage" class="showing">
+        <h1>Davis<br>Destinations</h1>
+        <p class="bold">Visit destinations featured in the Davis Centennial Seal!<p>
+
+        <!-- <p>Explore the map, visit a location, click the pop up to learn more, and take a photo with a themed face filter.</p> -->
+
+            <!-- Explore the map to learn more about each Davis location, complete with a unique face filter! -->
+
+            <!-- Inspired by the Davis Centennial Seal, we curated destinations that are important to the Davis community. Explore the map and travel to each location. When you arrive click the "I'm here" button to learn more about the location and take a photo with a unique face filter. -->
+
+        <section id="buttons">
+            <button class="primary">Start Now</button>
+
+            <!-- Laura 6/5 In User Testing said instruction button not necessary -->
+        </section>
+
+        <img src="images/responsive-grass.png" alt="grass image" id="grass">
+
+    </section>
+
+    <section id="popup" class="hidden">
+        <button id="close">X</button>
+        <h3>Instructions</h3>
+        <ul>
+            <li>Explore the Map</li>
+            <li>Visit a Davis Destination</li>
+            <li>Click "I'm Here" when you arrive</li>
+            <li>Learn more about the destination</li>
+            <li>Launch the themed face filter</li>
+            <li>Snap a picture!</li>
+        </ul>
+    </section>
+
+    <section id="mappage" class="showing">
+        <div><i class="fas fa-long-arrow-left"></i></div>
+        <!-- leafletmap -->
+        <div id="map"></div>
+       
+    </section>
+
+    <section id="placeinfo" class="hidden">
+        <div id="placetext">
+        </div>
+        <!-- <button class="primary camera" id="BTN">Launch Face Filter</button>` -->
+        <button class="primary camera hidden" id="sealBTN">Launch Seal Filter</button>
+        <button class="primary camera hidden" id="centralparkBTN">Launch Park Filter</button>
+        <button class="primary camera hidden" id="arbBTN">Launch Arboretum Filter</button>
+        <button class="primary camera hidden" id="amtrakBTN">Launch Railroad Filter</button>
+        <button class="primary camera hidden" id="bikeBTN">Launch Bike Filter</button>
+        <button class="primary camera hidden" id="eggheadBTN">Launch Egghead Filter</button>
+        <button class="secondary" id="back">Back</button>`
+    </section>
+
+    <section id="facefilter" class="hidden">
+        <!-- <button id="switch">Switch</button> -->
+        <button id="capture"></button>
+        <button class="primary" id="backMap">Back to Map</button>
+    </section>
+    
+</body>
+</html>
