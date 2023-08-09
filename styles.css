@@ -18,6 +18,7 @@ a{
 
 a:hover{
     cursor: pointer;
+    color: #ABAAAA;
     
 }
 
@@ -139,6 +140,7 @@ p{
     flex-direction: column;
     gap: 5px;
 }
+
 .h3Span{
     font-size: 19px;
 }
@@ -568,10 +570,17 @@ h2{
     flex-direction: column;
     gap: 5px;
 }
+.link:hover{
+    color: #ABAAAA;
+    
+}
 .credit{
 color: #EBEBEB;
 font-weight: bolder;
 }   
+.credit:hover{
+    color: #ABAAAA;
+}
 
 /* drawings in grid */
 #s3{
