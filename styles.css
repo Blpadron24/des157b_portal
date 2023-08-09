@@ -28,7 +28,7 @@ h1, h2{
 h1{
     font-size: 48px;
     position: absolute;
-    top: -70px;
+    top: -104px;
 }
 .cp{
     font-size: 27px;
@@ -46,12 +46,12 @@ p{
     display: none;
 }
 .about{
-    padding: 26px 20px 0 20px;
+    padding: 21px 20px 0 20px;
     position: relative;
 }
 
 .about p{
-    padding-bottom: 6.5px;
+    padding-bottom: 7px;
 }
 /* mobile dropdown  */
 .accordion li{
