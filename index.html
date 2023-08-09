@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;800&family=Chango&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Des157b Portal Page</title>
@@ -13,30 +16,412 @@
     <main>
         <section class="left">
             <header>
-                <img class="hero" src="#" alt="line drawings of tomatoes, davis building and patwin seal">
+                <img id="mHero" src="images/mHero.svg" alt="line drawings of tomatoes, davis building and patwin seal">
+                <img id="dHero" src="images/hero.svg" alt="line drawings of tomatoes, davis building and patwin seal">
             </header>
-            <h1>Des 157b Centennial Seal Projects</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, a ut, autem, tempore qui eligendi ratione alias molestias nisi facere debitis. Iure a, debitis magni tempore dolor deserunt saepe reprehenderit!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, a ut, autem, tempore qui eligendi ratione alias molestias nisi facere debitis. Iure a, debitis magni tempore dolor deserunt saepe reprehenderit!</p>
+            <div class="about">
+                <h1>Des 157b</h1>
+                <h2 class="cp">Capstone Projects</h2>
+                <p>Welcome to the showcase of student projects for the Davis Centennial Seal. The seal, created by <a class="aLink" href="https://susanshelton.com/" target="_blank" rel="noreferrer noopener">Susan Shelton</a>, celebrates the 100th anniversary of the 1917 incorporation of the city of Davis. It is located at 604 Second St in downtown Davis.</p> 
+                <p>The DES 157B (Interactive Media III) courses are taught by glenda drew and Bill Mead. Learn more about the class <a class="aLink" href="https://thatwebsiteclass.com/" target="_blank" rel="noreferrer noopener">here</a>.</p>
+               
+            <div class="aboutFooter">
+                <img class="mFooter" src="images/bike_flag.svg" alt="bike sign and chicano flag">
+                <img class="dFooter" src="images/dFish.svg" alt="fish">
+                <p>Designed and developed by <a class="aLink" href="#">Brenda Padron</a></p>
+            </div>
+            </div>
+            
         </section>
-        <div class="container">
-            <div id="s1" class="projects">1</div>
-            <div id="s2" class="projects">2</div>
-            <div id="s3" class="drawings">3</div>
-            <div id="4" class="projects">4</div>
-            <div id="5" class="projects">5</div>
-            <div id="s6" class="drawings">6</div>
-            <div id="s7" class="projects">7</div>
-            <div id="s8" class="projects">8</div>
-            <div id="s9" class="projects">9</div>
-            <div id="s10" class="projects">10</div>
-            <div id="s11" class="projects">11</div>
-            <div id="s12" class="projects">12</div>
-            <div id="s13" class="drawings">13</div>
-            <div id="s14" class="projects">14</div>
-            <div id="s15" class="projects">15</div>
-            <div id="s16" class="projects">16</div>
-            <div id="s17" class="projects">17</div>
+        <!-- mobile view mobile projects-->
+        <ul class="accordion">
+            <li>
+               <div class="mLabel">
+                    <div>
+                        <h3 class="labelName">Mobile</h3>
+                    </div>
+                    <div class="mHero1C">
+                        <img class="mHero1" src="images/elk_egghead.svg" alt="egghead">
+                    </div>
+                    <div class="mPlusMinus">
+                        <img src='images/close.svg' alt='close arrow' width='25px'>
+                    </div>
+                </div>
+                <div id="mDrop" class="visible">
+                    
+                        <div id="m1" class="mProject">
+                            <a class="mLink" href="/projects/davisHunt_cindy_lee__alyannah_erika_dimaano/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/davisHunt_cindy_lee__alyannah_erika_dimaano/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Davis Treasure Hunt</h3>
+                                <p>Explore Davis with this Centennial Seal treasure hunt!</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Cindy Lee</a> and <a class="credit" href="#" target="_blank" rel="noreferrer noopener">Erika Dimaano</a></span></p>
+                            </div>
+                
+                        </div>
+                    
+                    
+                        <div id="m2" class="mProject"> 
+                            <a class="mLink" href="/projects/davisDestinations_rheiana_cuevas/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/davisDestinations_rheiana_cuevas/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Davis Destinations</h3>
+                                <p>Visit destinations featured in the Davis Centennial Seal!</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Rheiana Cuevas</a> </span></p>
+                            </div>
+                        </div>
+                   
+                    
+                        <div id="m3" class="mProject"> 
+                            <a class="mLink" href="/projects/brickProject_kaelyn_syrdah/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/brickProject_kaelyn_syrdah/" target="_blank" rel="noreferrer noopener">     
+                                <h3>Davis Bricks &mdash;<span class="h3Span"> COMING SOON!</span></h3>
+                                <p><span> A digital version of the bricks that sorround the Centennial Seal.</span></p>
+                                
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Kaelyn Syrdahl</a> </span></p>
+                            </div>
+                        </div>
+                   
+                    
+                        <div id="m4" class="mProject"> 
+                            <a class="mLink" href="/projects/soundMap_sky_laroche/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/soundMap_sky_laroche/" target="_blank" rel="noreferrer noopener">     
+                                <h3>Centennial Seal Sound Map</h3>
+                                <p> Enjoy listening to the many sounds of Davis!</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Skylar Laroche</a> </span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <img src="images/fish.svg" alt="fish">
+        </div>
+<!-- mobile view desktop projects -->
+        <ul class="accordion">
+            <li>
+                <div class="dLabel">
+                    <div>
+                        <h3 class="labelName">Desktop</h3>
+                    </div>
+                    <div class="dHero1C">
+                        <img class="dHero1" src="images/bus_falcon.svg" alt="bus and falcon">
+                        </div>
+                    <div class="dPlusMinus"> 
+                        <img src='images/open.svg' alt='open arrow' width='25px'>
+                    </div>
+                </div>
+                <div id="dDrop" class="hidden">
+                   
+                        <div id="d1" class="dProject"> 
+                            <a class="mLink" href="/projects/davisRedo/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/davisRedo/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Davis Redo</h3>
+                                <p> A fun Davis themed virtual escape room experience.</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Brenda Padron</a> and <a class="credit" href="#" target="_blank" rel="noreferrer noopener">Santhoshi Ramanathan</a></span></p>
+                            </div>
+                        </div>
+                        <div id="d2" class="dProject"> 
+                            <a class="mLink" href="/projects/davisPoll_kim_jenni/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/davisPoll_kim_jenni/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Davis Poll</h3>
+                                <p>A poll about Davis. See how your answers compare to others in the community.</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Kim Hofmann</a> and <a class="credit" href="#" target="_blank" rel="noreferrer noopener">Jenni Ramos</a></span></p>
+                            </div>
+                        </div>
+                        <div id="d3" class="dProject"> 
+                            <a class="mLink" href="/projects/compassionBench_kestrel_hewson/about.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/compassionBench_kestrel_hewson/about.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>The Compassion Bench</h3>
+                                <p>A place to reflect on the concept of compassion.</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Kestrel Hewson</a></span></p>
+                            </div>
+                        </div>                   
+                        <div id="d4" class="dProject"> 
+                            <a class="mLink" href="/projects/davisPuzzle_satomi_richardson/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/davisPuzzle_satomi_richardson/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Unlock the Seal</h3>
+                                <p> Piece the Davis Centennial Seal together to complete this puzzle!</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Satomi Richardson</a></span></p>
+                            </div>
+                        </div>
+                        <div id="d5" class="dProject"> 
+                            <a class="mLink" href="/projects/davisTapestry_mona_wang/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/davisTapestry_mona_wang/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Weaving Davis Together</h3>
+                                <p> Learn about the Davis community through this interactive experience.</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Mona Wang</a></span></p>
+                            </div>
+                        </div>
+                        <div id="d6" class="dProject"> 
+                            <a class="mLink" href="/projects/sealKnowledge_nguyen_ho_Jennifer_kim/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/sealKnowledge_nguyen_ho_Jennifer_kim/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Seal Your Knowledge &mdash;<span class="h3Span"> COMING SOON!</span></h3>
+                                <p><span>A multiplayer digital boardgame that tests your Davis knowledge.</span></p>
+                                
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Nguyen Ho</a> and <a class="credit" href="#" target="_blank" rel="noreferrer noopener">Jennifer Kim</a></span></p>
+                            </div>
+                        </div>
+                    
+                   
+                        <div id="d7" class="dProject"> 
+                                <a class="mLink" href="/projects/davisMission_joanna_hu/index.html" target="_blank" rel="noreferrer noopener"> 
+                                </a>
+                                <div class="mProjectInfo">
+                                    <a class="iLink" href="/projects/davisMission_joanna_hu/index.html" target="_blank" rel="noreferrer noopener">     
+                                    <h3>Mission: Seal Retrieval</h3>
+                                    <p>The Centennial Seal is missing! Go on a mission to recover the seal.</p>
+                                    </a>
+                                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Joanna Hu</a></span></p>
+                                </div>
+                        </div>
+                    
+                        <div id="d8" class="dProject"> 
+                            <a class="mLink" href="/projects/davisBuddies_lauren_hong/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/davisBuddies_lauren_hong/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Davis Buddies and Buds</h3>
+                                <p>Meet some of the animals and plants of Davis.</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Lauren Hong</a></span></p>
+                            </div>
+                        </div>
+                        <div id="d9" class="dProject"> 
+                            <a class="mLink" href="/projects/intSeal_kristian_wilson/index.html" target="_blank" rel="noreferrer noopener"> 
+                            </a>
+                            <div class="mProjectInfo">
+                                <a class="iLink" href="/projects/intSeal_kristian_wilson/index.html" target="_blank" rel="noreferrer noopener">     
+                                <h3>Interactive Centennial Seal</h3>
+                                <p>Interact with the Centennial Seal to learn more about Davis!</p>
+                                </a>
+                                <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Kristian Wilson</a></span></p>
+                            </div>
+                        </div>
+                    
+                        <div id="d10" class="dProject">
+                            <a class="iLink" href="#" target="_blank" rel="noreferrer noopener">   
+                            <div class="dProjectInfo">
+                                <h3>Centennial Seal Illustrations</h3>
+                                <p>Choose from a variety of illustrations that decorate the seal to download and color!</p> 
+                            </a>
+                                <p></p>
+                            </div>
+                        </div>
+                   
+                </div> 
+            </li>
+        </ul>
+        <footer>
+            <p>Designed and developed by <a class="aLink" href="#">Brenda Padron</a></p>
+        </footer>
+        
+ <!-- desktop -->
+
+    <!-- desktop1 -->
+        <div id="desktop" class="dContainer">
+            <div id="d1" class="projects">
+               
+                <div class="d1Over overlay">
+                     <a class="link" href="projects/davisRedo/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Davis Redo</h3>
+                        <p>A fun Davis themed virtual escape room experience. </p>
+                    </a>
+                    <p><span>by <a class="credit" href="#">Brenda Padron</a>  and </span> <span class="br"><a class="credit" href="#">Santhoshi Ramanathan</a></span>
+                    </p>
+                </div>
+            </div>
+    <!-- desktop2 -->
+            <div id="d2" class="projects">
+                <div class="d2Over overlay">
+                    <a class="link" href="projects/davisPoll_kim_jenni/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Davis Poll</h3>
+                        <p>A poll about Davis. See how your answers compare to others in the community.</p>
+                    </a>  
+                    <p><span>by <a class="credit" href="#" target="_blank" rel="noreferrer noopener">Kim Hofmann</a> and </span> <span class="br"><a class="credit" href="#" target="_blank" rel="noreferrer noopener">Jenni Ramos</a></span></p>
+                </div>  
+            </div>
+    <!-- drawings1 -->
+            <div  id="s3" class="drawings">
+                <div class="desk">
+                    <div>
+                    <img src="images/left.svg" alt="left arrow" width="24px" height="24px">
+                    </div>   
+                    <h2>Desktop</h2>
+                </div>
+                <div>
+                    <img class="bikeFlag" src="images/bike_flag2.svg" alt="bike sign and flag" width="255px" height="255px">
+                </div>
+                <div class="mob">
+                    <h2 >Mobile</h2>
+                    <div>
+                        <img src="images/down.svg" alt="down arrow" width="24px" height="24px">
+                    </div>
+                </div>
+            </div>
+    <!-- desktop3 -->
+            <div id="d3" class="projects">
+                <div class="d3Over overlay">
+                    <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+                        <h3>The Compassion Bench</h3>
+                        <p>A place to reflect on the concept of compassion. </p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Kestrel Hewson</a></span></p>
+                </div>
+            </div>
+    <!-- desktop4 -->
+            <div id="d4" class="projects">
+                <div class="d4Over overlay">
+                    <a class="link" href="/projects/davisPuzzle_satomi_richardson/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Unlock the Seal</h3>
+                        <p>Piece the Davis Centennial Seal together to complete this puzzle!</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Satomi Richardson</a></span></p>
+                </div> 
+            </div>
+    <!-- drawings2 -->
+            <div id="s6" class="drawings">
+                <img src="images/egghead.svg" alt="egghead" width="115">
+                <img src="images/elk.svg" alt="elk" width="166">
+            </div>
+    <!-- mobile1 -->
+            <div id="m1" class="projects">
+            <div class="m1Over overlay">
+                    <a class="link" href="/projects/davisHunt_cindy_lee__alyannah_erika_dimaano/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Davis Treasure Hunt</h3>
+                        <p>Explore Davis with this Centennial Seal treasure hunt!</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Cindy Lee</a> and</span> <span class="br"><a class="credit" href="#" target="_blank" rel="noreferrer noopener">Erika Dimaano</a></span></p>
+            </div> 
+            </div>
+    <!-- desktop5 -->
+            <div id="d5" class="projects">
+                <div class="d5Over overlay">
+                    <a class="link" href="/projects/davisPuzzle_satomi_richardson/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Weaving Davis Together</h3>
+                        <p>Learn about the Davis community through this interactive experience.</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Mona Wang</a></span></p>
+                </div>
+            </div>
+    <!-- desktop6 -->
+            <div id="d6" class="projects">
+                <div class="d6Over overlay">
+                    <a class="link" href="/projects/sealKnowledge_nguyen_ho_Jennifer_kim/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Seal Your Knowledge</h3>
+                        <p>COMING SOON!</p>
+                        <p> <span> A multiplayer digital boardgame that tests your Davis knowledge.</span></p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Nguyen Ho</a> and</span> <span class="br"><a class="credit" href="#" target="_blank" rel="noreferrer noopener">Jennifer Kim</a></span></p>
+            </div> 
+            </div>
+    <!-- mobile2 -->
+            <div id="m2" class="projects">
+                <div class="m2Over overlay">
+                    <a class="link" href="/projects/davisDestinations_rheiana_cuevas/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Davis Destinations</h3>
+                        <p>Visit destinations featured in the Davis Centennial Seal!</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Rheiana Cuevas</a></span></p>
+                </div>
+            </div>
+    <!-- desktop7 -->
+            <div id="d7" class="projects">
+                <div class="d7Over overlay">
+                    <a class="link" href="/projects/davisMission_joanna_hu/index.html" target="_blank" rel="noreferrer noopener">
+                        <h3>Mission: Seal Retrieval</h3>
+                        <p>The Centennial Seal is missing! Go on a mission to recover the seal.</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Joanna Hu</a></span></p>
+                </div>
+            </div>
+    <!-- desktop8 -->
+            <div id="d8" class="projects">
+                <div class="d8Over overlay">
+                    <a class="link" href="/projects/davisBuddies_lauren_hong/index.html"  target="_blank" rel="noreferrer noopener">
+                        <h3>Davis Buddies and Buds</h3>
+                        <p>Meet some of the animals and plants of Davis.</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Lauren Hong</a></span></p>
+                </div>
+            </div>
+    <!-- drawings3 -->
+            <div id="s13" class="drawings">
+                <img src="images/bus.svg" alt="bus" width="155">
+                <img src="images/falcon.svg" alt="falcon" width="130">
+            </div>
+    <!-- mobile3 -->
+            <div id="m3" class="projects">
+                    <div class="m3Over overlay">
+                        <a class="link" href="/projects/brickProject_kaelyn_syrdah/index.html"  target="_blank" rel="noreferrer noopener">
+                            <h3>Davis Bricks</h3>
+                            <p>COMING SOON!</p>
+                            <p><span> A digital version of the bricks that sorround the Centennial Seal.</span></p>
+                        </a>
+                        <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Kaelyn Syrdahl</a></span></p>
+                    </div>
+            </div>
+    <!-- desktop9 -->
+            <div id="d9" class="projects">
+                <div class="d9Over overlay">
+                    <a class="link" href="/projects/intSeal_kristian_wilson/index.html"  target="_blank" rel="noreferrer noopener">
+                        <h3>Interactive Centennial Seal</h3>
+                        <p> Interact with the Centennial Seal to learn more about Davis!</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Kristian Wilson</a></span></p>
+                </div>
+            </div>
+    <!-- desktop10 -->
+            <div id="d10" class="projects">
+                <div class="d10Over overlay">
+                    <a class="link" href="/projects/soundMap_sky_laroche/index.html"  target="_blank" rel="noreferrer noopener">
+                        <h3>Centennial Seal Illustrations</h3>
+                        <p> Choose from a variety of illustrations that decorate the seal to download and color!
+                        </p>
+                    </a>
+                    <p></p>
+                </div>
+            </div>
+    <!-- mobile4 -->
+            <div id="m4" class="projects">
+                <div class="m4Over overlay">
+                    <a class="link" href="/projects/soundMap_sky_laroche/index.html"  target="_blank" rel="noreferrer noopener">
+                        <h3>Centennial Seal Sound Map</h3>
+                        <p> Enjoy listening to the many sounds of Davis!</p>
+                    </a>
+                    <p><span>by<a class="credit" href="#" target="_blank" rel="noreferrer noopener"> Skylar Laroche</a></span></p>
+                </div>
+            </div>
         </div>
 
     </main>
