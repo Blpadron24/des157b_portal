@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    width: 175px;
+    height: auto;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin: auto;
+}
+
+main{
+    width: 1200px;
+    height: 750px;
+    background-color: #EBEBEB;
+    margin: auto;
+    border: #ABAAAA solid .75px;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    padding: 20px;
+   
+    position: relative;
+   
+}
+header h1{
+    font-family: 'Chango', cursive;
+    font-size: 37px;
+    padding-left:4px;
+    margin-bottom: 12px;
+    line-height: 1.1em;
+    margin-top: 90px;
+}
+header p{
+    font-family: 'Abhaya Libre', serif;
+    padding-left: 4px;
+    font-size: 19px;
+    line-height: 1.1em;
+}
+header .duck{
+    position: absolute;
+    width: 275px;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+}
+header .elk{
+    width: 400px;
+    position: absolute;
+    top: 75%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 12px; 
+}
+.row1{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.row2{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.row3{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.illust{
+    border: #ABAAAA solid .75px;
+    
+}
