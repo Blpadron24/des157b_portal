@@ -27,14 +27,17 @@ h1, h2{
     
 }
 h1{
-    font-size: 48px;
+    font-size: 40px;
     position: absolute;
-    top: -104px;
+    top: -90px;
+    letter-spacing: .5px;
+    
 }
 .cp{
-    font-size: 27px;
+    font-size: 24px;
     position: absolute;
     top: -20px;
+    
 }
 
 p{
@@ -47,7 +50,7 @@ p{
     display: none;
 }
 .about{
-    padding: 21px 20px 0 20px;
+    padding: 15px 20px 0 20px;
     position: relative;
 }
 
