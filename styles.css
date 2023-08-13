@@ -337,7 +337,7 @@ footer{
     display: block;
     position: absolute;
     right: -20px;
-    bottom: -70px;
+    bottom: -76px;
     width: 150px;
 }
 ul{
@@ -358,6 +358,7 @@ section{
 
 h1{
     font-size: 50px;
+    top: -105px;
 }
 h2{
     font-size: 32px;
