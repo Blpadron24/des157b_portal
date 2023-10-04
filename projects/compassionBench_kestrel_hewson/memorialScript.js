@@ -1,6 +1,6 @@
 // Parse.initialize('jZbgGvTqompDKrt8ffrLnnZD7yY4DIhkcJEiAw5W', 'LINDPSjtUUuLwQits4ZHAlOdyftsoP8oKvgyjBVp');
 // Parse.serverURL = 'https://parseapi.back4app.com/';
-Parse.initialize("bRSc0ovYKt8vL6v2SBM60sXMk6FVntIeJkM7C3dD", "IRwUhGG8bHhoh5tvUrWQplBY4GgjjDaGyu220RV1");
+Parse.initialize("bRSc0ovYKt8vL6v2SBM60sXMk6FVntIeJkM7C3dD", "hev5ghJ7tDDF8h3asY796MKLgSr2YsDfwurwQ9h9");
 Parse.serverURL = "https://parseapi.back4app.com/";
 AOS.init();
 
