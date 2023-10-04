@@ -1,32 +1,32 @@
 {
     "deer" : {
         "item" : "Deer",
-        "info" : "deer popular",
-        "image" : "images/deer.png"
+        "info" : "There were many methods to hunt deer that are specific to village regions. In one type of hunting, a hunter wears a deer headdress to get closer to the deer without alarming it. Deer was cooked and eaten fresh after a hunt or dried to make deer jerky, a common trade item. <br> <br> Deer headresses were also used in ceremonial dances.",
+        "image" : "images/deerPic.gif",
+        "itemStatus" : ["Not Collected", "Collected"]
     },
-    "rye" : {
-        "opener" : "Ugh, I’m so close to finishing this basket but I’m almost out of blue rye fibers!",
-        "request" : "Please find some for me so I can finish this faster. I will trade you with something really cool!",
-        "closer" : "The object? I heard it was made of a rare rock, something I’ve never seen before. The color looks a bit like wood or acorn…",
-        "seal" : "Oh the cool thing? Well, I heard the chief found something in the forest earlier today. No one knows what it is but it is quite shiny. It looks like a small part of something bigger.",
-        "item" : "rye"
+    "deerGrass" : {
+        "item" : "Deer Grass",
+        "info" : "Deer grass is used for basket weaving. Deer like to take refuge, hide, and nest in the grass, which is why it is named after them. <br><br> Unfortunately, some grasses don't thrive enough for weaving anymore.",
+        "image" : "images/deerGrassPic.png",
+        "itemStatus" : ["Not Collected", "Collected"]
     },
     "shells" : {
-        "opener" : "Oh hey, no need to panic! These fires are 100% controlled. We’re just burning the land so new shoots grow and lure in game.",
-        "request" : "You’re looking for some blue rye? You’re in luck! We just harvested this today. I’ll trade it for some clam shells.",
-        "closer" : "Ooh I can’t believe you got 5 clam shells that quickly, impressive! Here’s the rye fibers, as promised.",
-        "item" : "shells"
+        "item" : "Shells",
+        "info" : "In the Patwin language, ‘ka*doi’ means clam shells or money. The coastal Pomo people traded clam shell disks with the Patwin for goods such as deer jerky. Whole clam shells were fashioned into beads and strung into a necklace of 80 to 100 beads.",
+        "image" : "images/shellPic.png",
+        "itemStatus" : ["Not Collected", "Collected"]
     },
     "net" : {
-        "opener" : "Man, fishing sure is hard. I’m not used to this bone harpoon. Maybe a net would work better? I saw some back in the village.",
-        "request" : "Thanks for the help! I surely can catch some salmon now. Here, take some clam shells as my token of gratitude.",
-        "closer" : "The object? I heard it was made of a rare rock, something I’ve never seen before. The color looks a bit like wood or acorn…",
-        "item" : "net"
+        "item" : "Net",
+        "info" : "Nets were a common hunting tool for many Californian natives. They were used to catch small fish and birds, like ducks and geese. Hunters made duck decoys out of tule and placed them on the water to attract ducks before casting a weighted net over them. <br><br> Nets were woven cordage made of from wild hemp, milkweed, and other fibers. Stronger nets made of douglas iris and human hair can even catch deer and pronghorns!",
+        "image" : "images/netPic.gif",
+        "itemStatus" : ["Not Collected", "Collected"]
     },
     "vines" : {
-        "opener" : "Oh this? This is the village dance house! We are about to have our annual Kuksa to bring good health and bountiful hunt to our village.",
-        "request" : "Would you please find me some more oak and grapevines? I need a few more supports.",
-        "closer" : "Amazing, thank you! We can definitely finish this by sundown. The chief? He’s inside here. I saw him holding something earlier. Could it be an offering from the earth itself bringing wealth to our village?",
-        "item" : "vines"
+        "item" : "Grapevines",
+        "info" : "Grapevines were used as rope to tie things together, like willow branches. Their strength and flexibility makes grapevines great for binding dome houses, granaries, and more.",
+        "image" : "images/vinePic.png",
+        "itemStatus" : ["Not Collected", "Collected"]
     }
 }

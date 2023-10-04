@@ -22,30 +22,87 @@
     <script src="script.js" type="module" defer></script>
     
 
-    <title>Capstone Project</title>
+    <title>Mission: Seal Retrieval</title>
 </head>
+
 <body>
 
     <canvas id="canvas">
     </canvas>
 
     <header>
-        <h1>quest for the seal</h1>
-        <p>can you find the missing seal pieces before it's too late?</p>
+        <h1>Mission: Seal Retrieval</h1>
+        <p>Can you find the missing piece?</p>
     </header>
 
+    <i class="fa-solid fa-info"></i>
+
     <section id="overlay">
-        <h2>Mission: Seal Retrieval</h2>
-        <p>Hello Agent. The Davis seal was broken and scattered across time and space. Please find the missing piece and return it to the mayor. We’re counting on you.</p>
 
-        <p>Your first stop is the Patwin village of Topaidihi, the land Davis used to be back in before the 1800s. Good luck, agent.</p>
+        <div class="missionInfo">
+            <div class="agentInfoIntro">
+                <img src="images/agent.gif" width="100" height="100" alt="agent gif">
 
-        <img src="images/seal.png" width="273" height="159" alt="broken seal piece of the patwin people">
+                <div class="agentName">
+                    <p>Davis Seal HQ</p>
+                    <h3>Agent [REDACTED]</h3>
+                </div>
+            </div>
 
-        <button type="button" id="mission">Accept Mission</button>
+            <div class="missionInfo">
+                <h2>Mission: Seal Retrieval</h2>
+                <p>Hello Agent. The Davis seal was broken and scattered across time and space. Please find the missing piece and return it to the mayor. We’re counting on you.
+
+                <p>Your first stop is a Patwin village, the land Davis used to be back in the 1800s. Good luck, agent.</p>
+
+                <button type="button" id="missionBtn"> Accept Mission</button>
+            </div>
+        </div>
+
+        <img class="sealImg" src="images/seal.gif" width="380" height="388" alt="gif of centennial seal with missing piece">
+
     </section>
 
-    
+
+    <section id="instructions" class="hide">
+        <h2>How to Play</h2>
+        <h3>Complete quests around the village and find the missing seal piece!</h3>
+
+        <div id="instructionsContent">
+            <div id="move">
+                <div>
+                    <img src="images/arrows.gif" width="150" height="100" alt="gif of player moving">
+                    <p>Use arrow keys to move.</p>
+                </div>
+                
+
+                <img src="images/space.gif" width="244" height="56" alt="gif of player interactions">                
+                <p>Press space to interact with <br> villagers and items.</p>
+                
+            </div>
+            
+            <div id="quest">
+
+                <h3>Dialog Interactions</h3>
+                <p>Dialogs may change color during an interaction.</p>
+
+                <div  id="questInfo">
+                    <img src="images/white.png" width="147" height="67" alt="white dialog box example">
+                    <p><span id="white">White</span> <br>greeting</p>
+
+                    <img src="images/blue.png" width="147" height="67" alt="blue dialog box example">
+                    <p><span id="blue">Blue</span> <br> Quest in progress</p>
+
+                    <img src="images/green.png" width="147" height="67" alt="green dialog box example">
+                    <p><span id="green">Green</span> <br>Completed quest</p>
+                </div>
+            </div>
+        </div>
+        
+        <button type="button" id="startBtn">Begin Mission</button>
+
+    </section>
+
 
     <section id="inventory" class="hide">
         
@@ -56,11 +113,88 @@
         </div>
 
         <div id="itemContent">
-            <h2 id="itemName">Item</h2>
-            <img id="itemImg">
-            <p id="itemDescrip">yeet</p>
+            <img id="itemImg" src="images/placeholderPic.png" width="200" height="350" alt="placeholder picture of inventory items">
+            
+            <div>
+                <h2 id="itemName">Item</h2>
+                <p id="itemDescrip">Please select an item.</p>
+                <p>Item Status: <span id="status">???</span></p>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section id="seal" class="hide">
+
+        <div class="missionInfo">
+            <div class="agentInfoIntro">
+                <img src="images/agent.gif" width="100" height="100" alt="agent gif">
+
+                <div class="agentName">
+                    <p>Davis Seal HQ</p>
+                    <h3>Agent [REDACTED]</h3>
+                </div>
+            </div>
+
+            <div class="endText">
+                <h2>Congrats, Agent</h2>
+
+                <p>You foumd the missing piece! With your help, the seal can be now be fully restored.</p> 
+                
+                <p>Great work, agent. We will reach out with your next mission soon. Until then, you're dismissed. Signing off.</p>
+
+                <button type="button" id="endBtn">Complete Mission</button>
+            </div>
         </div>
 
+        <img class="sealImg" src="images/seal.png" width="400" height="300" alt="missing seal piece">
+
+    </section>
+
+    
+    <section id="credits" class="hide">
+
+        <h2>Thank you for playing!</h2>
+
+        <div id="creditsContent">
+            <div>
+                <h3>Created By</h3>
+                <h4>Joanna Hu</h4>
+                <p>UC Davis Design Student</p>
+
+                <h3>Spcial Thanks</h3>
+                <h4>Diana Almendariz</h4> 
+                <p class="title">Cultural Practitioner of Maidu/ Wintun, <br>Hupa/ Yurok Traditions, Heritage and Experiences</p> 
+                <p class="title">Member of <a href="http://yolosol.org/">YoloSol</a></p>
+
+                <h4>Glenda Drew</h4>  
+                <p class="title"> UC Davis Design Professor </p>
+
+                <div id="sealPartners">
+                    <h4>Rachel Hartsough</h4>
+                    <h4>Susan Shelton</h4>
+
+                    <p class="title">Davis Community Partner</p>
+                    <p class="title">Centennial Seal Artist</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Sources</h3>
+                <a href="https://susanshelton.com/Seals/Davis-Centennial-Seal">Davis Centennial Seal</a> <p class="title">by Susan Shelton</p>
+
+               <a href="https://factcards.califa.org/cai/patwin.html">Social Studies Fact Cards</a> <p class="title">by Toucan Valley Publications, Inc.</p>
+
+               <a href="https://naturalreserves.ucdavis.edu/sites/g/files/dgvnsk1091/files/inline-files/QR_handbook_humanhistory.pdf">Human History</a>  <p class="title">by Alyssa Nelson and Lenora Timm</p>
+
+                <a href="https://yochadehe.gov/heritage/our-story/">Our Story</a><p class="title">The Yocha Dehe Wintun Nation</p>
+
+                <a href="https://www.researchgate.net/figure/Patwin-dance-house-cross-section-adapted-from-McKern-1923163_fig3_265742628">Trails, Tribelets, And Territories </a> <p class="title">by Evan Elliott, Adrian Alexis Praetzellis, Christopher Boutin, and M.A. Lloyd</p>
+            </div>
+        </div>
+        
+        <button type="button" id="creditsBtn">The End</button>
     </section>
     
     <div id="overlayBg"></div>

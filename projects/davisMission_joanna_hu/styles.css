@@ -1,3 +1,5 @@
+/* ------ GENERAL STYLING  ------- */
+
 body {
     padding:0; 
     margin:0;
@@ -22,8 +24,12 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    margin: 0;
+}
+
 p {
-    margin: 0px 0px 10px;
+    margin: 0px 0px 8px;
 }
 
 .hide {
@@ -45,27 +51,6 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
-#overlay {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: 400px;
-
-    background-color: antiquewhite;
-
-    z-index: 3;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 15px;
-
-    padding: 50px;
-}
-
 #overlayBg {
     width: 1000px;
     height: 550px;
@@ -75,7 +60,142 @@ button:hover {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+
+    z-index: 0;
 }
+
+/* ------ OPENING OVERLAY STYLING  ------- */
+
+#overlay {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+
+    background-color: antiquewhite;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    z-index: 4;
+    padding: 50px;
+}
+
+.missionInfo h2 {
+    margin-top: 15px;
+}
+
+.agentInfoIntro {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    margin-bottom: 8px;
+}
+
+.sealImg {
+    align-self: center;
+    justify-self: center;
+}
+
+#missionBtn, #endBtn, #startBtn, #creditsBtn {
+
+    border-radius: 8px;
+    width: fit-content;
+    margin-top: 15px;
+    padding: 10px 15px;
+
+    background-color: rgb(76, 76, 76);
+    color: aliceblue;
+}
+
+#missionBtn:hover, #endBtn:hover, #startBtn:hover, #creditsBtn:hover {
+    background-color: aliceblue;
+    color: rgb(62, 62, 62);
+}
+
+/* ------ INSTRUCTIONS STYLING  ------- */
+
+#instructions, #seal, #credits {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+
+    background-color: antiquewhite;
+    border-radius: 15px;
+    text-align: center;
+
+    z-index: 3;
+    padding: 30px;
+}
+
+#instructionsContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 15px;
+}
+
+#instructions h3 {
+    margin: 0;
+}
+
+#instructionsContent p {
+    font-size: 24px;
+}
+
+#move p {
+    margin: 8px;
+}
+
+#move div {
+    margin-bottom: 35px;
+}
+
+#questInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+#quest p {
+    font-size: 21px;
+    text-align: left;
+
+    justify-self: left;
+}
+
+#questInfo img {
+    justify-self: right;
+}
+
+#white {
+    color: rgb(138, 138, 138);
+}
+
+#blue {
+    color: rgb(95, 151, 199);
+}
+
+#green {
+    color: green;
+
+}
+
+
+
+/* ------ INVENTORY STYLING  ------- */
 
 #inventory {
     position: absolute;
@@ -88,18 +208,32 @@ button:hover {
     background-color: antiquewhite;
 
     display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: 150px 615px;
+    border-radius: 15px;
     gap: 15px;
     justify-items: center;
 
-    z-index: 1;
-    padding: 15px;
+    z-index: 2;
+    /* padding: 15px; */
+}
+
+#itemList {
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px 0px 0px 15px;
+
+    padding: 15px 30px;
 }
 
 #itemList div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    /* background-color: salmon; */
+}
+
+#inventory h2 {
+    padding-top: 15px;
 }
 
 #itemList button {
@@ -116,6 +250,28 @@ button:hover {
     text-decoration: underline wavy;
 }
 
+#itemContent {
+    padding: 15px 15px 15px 30px;
+    width: 575px;
+
+    background-color: antiquewhite;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+#itemName {
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+/* #itemContent div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+} */
+
 #close {
     position: absolute;
     right: 5%;
@@ -124,4 +280,87 @@ button:hover {
 
 #close:hover {
     cursor: pointer;
+}
+
+/* ------ END OVERLAY STYLING  ------- */
+
+#seal {
+    height: fit-content;
+    padding: 50px;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    text-align: left;
+    z-index: 2;
+}
+
+#itemContent img {
+    align-self: center;
+}
+
+.agentName {
+    align-self: center;
+}
+
+#endText {
+    margin-top: 30px;
+    justify-self: center;
+}
+
+/* ------ CREDITS STYLING  ------- */
+
+#credits {
+    height: 400px;
+    z-index: 2;
+
+    justify-items: center;
+}
+
+#creditsContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 0.25fr;
+    column-gap: 30px;
+
+    padding: 0px 15px;
+}
+
+#credits h3 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#credits h4 {
+    color: rgb(73, 104, 207);
+    font-size: 21px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+#sealPartners {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+}
+
+.title {
+    font-size: 19px;
+    line-height: 1em;
+}
+
+#endBtn {
+    z-index: 5;
+}
+
+a {
+    color: chocolate;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline wavy;
 }
