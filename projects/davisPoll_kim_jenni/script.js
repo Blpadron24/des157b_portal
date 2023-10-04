@@ -3,12 +3,10 @@
   console.log ('reading js')
 
     // parse function //
-
-  // Parse.initialize("xwexble1IZSw0jpOXCPrLSW6u5hFyH7wJeOEQkRx", "y02Us1fj4E8hq4OqcndxH0WD3Qtv9zjvDPYdbOUd");
+  // Parse.initialize("tiPHp6gu5Gj7gTlwMU6M07Ly0MfHVQa5nhaRYsAg", "4OK4QI7AKa7YWFQD2wj4XaTqjE5moWnYdEkVOrcc");
   // Parse.serverURL = "https://parseapi.back4app.com/";
-  Parse.initialize("tiPHp6gu5Gj7gTlwMU6M07Ly0MfHVQa5nhaRYsAg", "4OK4QI7AKa7YWFQD2wj4XaTqjE5moWnYdEkVOrcc");
+  Parse.initialize("kijCqWX4WGsUFhrTyWS16WeXXagZNr3Be3PTgCjA", "IRwUhGG8bHhoh5tvUrWQplBY4GgjjDaGyu220RV1");
   Parse.serverURL = "https://parseapi.back4app.com/";
-
 // generates and pulls random question //
 
 async function fetchAllQuestions() {
