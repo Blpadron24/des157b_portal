@@ -513,7 +513,7 @@ h2{
     font-family: 'Abhaya Libre', serif;
 }
 
-.d1Over :nth-child(2), 
+/* .d1Over :nth-child(2), 
 .d2Over :nth-child(2), 
 .d3Over :nth-child(2),
 .d4Over :nth-child(2),
@@ -528,7 +528,7 @@ h2{
 .m3Over :nth-child(2),
 .m4Over :nth-child(2){
     
-}
+} */
 .d1Over p,
 .d2Over p, 
 .d3Over p, 
