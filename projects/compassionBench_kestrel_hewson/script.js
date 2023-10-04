@@ -1,5 +1,7 @@
-Parse.initialize('jZbgGvTqompDKrt8ffrLnnZD7yY4DIhkcJEiAw5W', 'LINDPSjtUUuLwQits4ZHAlOdyftsoP8oKvgyjBVp');
-Parse.serverURL = 'https://parseapi.back4app.com/';
+// Parse.initialize('jZbgGvTqompDKrt8ffrLnnZD7yY4DIhkcJEiAw5W', 'LINDPSjtUUuLwQits4ZHAlOdyftsoP8oKvgyjBVp');
+// Parse.serverURL = 'https://parseapi.back4app.com/';
+Parse.initialize("kijCqWX4WGsUFhrTyWS16WeXXagZNr3Be3PTgCjA", "IRwUhGG8bHhoh5tvUrWQplBY4GgjjDaGyu220RV1");
+Parse.serverURL = "https://parseapi.back4app.com/";
 AOS.init();
 
 (function () {
