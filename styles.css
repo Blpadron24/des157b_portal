@@ -152,10 +152,15 @@ p{
 span{
     font-size: 14px;
     color: #EBEBEB;
+    
 }
 span .credit{
     color:#EBEBEB;
     font-weight: bolder;
+    
+}
+.overlayFooter{
+    margin-top: auto;
 }
 /* footer styles */
 footer{
@@ -522,7 +527,7 @@ h2{
 .m2Over :nth-child(2), 
 .m3Over :nth-child(2),
 .m4Over :nth-child(2){
-    margin-top: auto;
+    
 }
 .d1Over p,
 .d2Over p, 
@@ -575,6 +580,10 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+    
+    
 }
 .link:hover{
     color: #ABAAAA;
